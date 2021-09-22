@@ -1,0 +1,239 @@
+body {
+  background-color: rgb(76, 25, 107);
+  margin: 60px 10px 0px 100px;
+}
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.subHeader1 {
+  display: flex;
+}
+.clock {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+}
+.cText {
+  height: 100px;
+  color: white;
+  font-weight: bolder;
+  font-family: cursive;
+  font-size: 23px;
+  padding: 15px 0px 0px 5px;
+}
+.timer {
+  position: relative;
+  display: flex;
+  background-color: white;
+  color: rgb(179, 41, 179);
+  padding-top: 10px;
+  padding-left: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+  height: 90px;
+  width: 420px;
+}
+.tme {
+  font-size: 25px;
+  padding: 25px 15px;
+}
+
+.colin {
+  padding-top: 12px;
+  font-size: 30px;
+}
+.timer div {
+  margin: 3px;
+}
+#hour,
+#minute,
+#second {
+  position: relative;
+  background-color: rgb(255, 220, 249);
+  padding: 8px;
+  font-size: 35px;
+  height: 55px;
+}
+#session {
+  background-color: rgb(187, 74, 168);
+  color: white;
+  margin-top: 6px;
+  padding: 15px 5px 0px 5px;
+  font-size: 25px;
+  height: 55px;
+}
+.hr,
+.mn,
+.sc {
+  position: absolute;
+  padding: 0px 0px 8px 5px;
+  font-size: 20px;
+  top: 55px;
+}
+.box1 {
+  position: absolute;
+  z-index: -1;
+  height: 100px;
+  width: 350px;
+  left: 60px;
+  background-color: rgb(136, 8, 148);
+  border-radius: 10px;
+}
+.box2 {
+  position: absolute;
+  z-index: -2;
+  height: 90px;
+  width: 380px;
+  left: -18px;
+  background-color: rgb(238, 194, 227);
+  border-radius: 10px;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3%;
+}
+.main > div {
+  border-radius: 10px;
+}
+
+.wakeup {
+  padding-top: 12px;
+  margin-top: 7px;
+  background-color: white;
+  grid-row-start: 1;
+  min-width: 400px;
+  height: 220px;
+  color: rgb(103, 5, 160);
+}
+.setWTime,
+.setLTime,
+.setNTime {
+  margin: 10px 15px;
+}
+select {
+  float: right;
+  width: 200px;
+  color: rgb(103, 5, 160);
+}
+.sun1,
+.uten1,
+.bed1 {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.lunch {
+  box-sizing: border-box;
+  background-color: white;
+  padding-left: 50px;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  height: 370px;
+  margin-top: 7px;
+  width: 470px;
+}
+.lunch > p {
+  color: blueviolet;
+  font-weight: bolder;
+  font-family: cursive;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.afternoon {
+  height: 40px;
+  color: white;
+  background-color: rgb(130, 10, 134);
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 18px 0px 0px 25px;
+}
+.party {
+  background-image: linear-gradient(
+    90deg,
+    rgb(148, 50, 204),
+    rgb(235, 26, 200)
+  );
+  width: 200px;
+  text-align: center;
+  color: white;
+  border-radius: 0px !important;
+  padding: 8px;
+}
+.party:hover {
+  background-image: linear-gradient(
+    90deg,
+    rgb(235, 26, 200),
+    rgb(148, 50, 204)
+  );
+}
+.verLine {
+  border-left: 3px solid rgb(103, 5, 160);
+  height: 35px;
+  margin-left: 22px;
+}
+
+@media only screen and (min-width: 260px) and (max-width: 1000px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .subHeader1{
+      margin: auto;
+  }
+  .timer{
+      margin: auto;
+      width: 360px;
+  }
+  .tme{
+      padding-left: 0px;
+  }
+  .box1{
+      width: 280px;
+  }
+  .box2{
+      width:305px;
+  }
+  .main {
+      margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3%;
+  }
+  body {
+    background-color: rgb(76, 25, 107);
+    margin: 2%;
+  }
+  .wakeup{
+      width: 360px;
+      margin: auto;
+  }
+  .afternoon{
+      width: 360px;
+      margin: auto;
+  }
+  .party{
+     margin: auto;
+     width: 240px;
+  }
+  .lunch {
+      grid-row-start: 4;
+      grid-row-end: 6;
+      height: 260px;
+     margin: auto;
+      width: 360px;
+    }
+    .lunch > p {
+        color: blueviolet;
+        font-weight: bolder;
+        font-family: cursive;
+        font-size: 10px;
+        padding-left: 10px;
+      }
+.lunch > img {
+    height: 290px;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 280px;  
+}

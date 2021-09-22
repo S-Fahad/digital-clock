@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reminder-clock</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/clock.jpeg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="subHeader1">
+        <img class="clock" src="/images/clock.jpeg" />
+        <div class="cText">CLOCK</div>
+      </div>
+      <div class="timer">
+        <div class="box1"><div class="box2"></div></div>
+        <div class="tme">TIME</div>
+        <div>
+          <div id="hour"></div>
+          <div class="hr">hours</div>
+        </div>
+        <div class="colin">:</div>
+        <div>
+          <div id="minute"></div>
+          <div class="mn">mins</div>
+        </div>
+        <div class="colin">:</div>
+        <div>
+          <div id="second"></div>
+          <div class="sc">secs</div>
+        </div>
+        <div id="session"></div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="wakeup">
+        <div class="setWTime">
+          <i class="fas fa-sun sun1" height="100px" width="100px"></i>set wake
+          up time
+
+          <select name="" id="sOption">
+            <option value="8 AM-9 AM">8 AM-9 AM</option>
+            <option value="">
+              <a href="./index2.html">9 AM-10 AM</a>
+            </option>
+            <option value="10 AM-11 AM">10 AM-11 AM</option>
+            <option value="11 AM-12 PM">11 AM-12 PM</option>
+          </select>
+        </div>
+        <div class="verLine"></div>
+        <div class="setLTime">
+          <i class="fas fa-utensils uten1"> </i>Set lunch time
+          <select name="" id="">
+            <option value="8 AM-9 AM">8 AM-9 AM</option>
+            <option value="9 AM-10 AM">9 AM-10 AM</option>
+            <option value="10 AM-11 AM">10 AM-11 AM</option>
+            <option value="11 AM-12 PM">11 AM-12 PM</option>
+          </select>
+        </div>
+        <div class="verLine"></div>
+        <div class="setNTime">
+          <i class="fas fa-bed bed1"></i>Set nap time
+          <select name="" id="">
+            <option value="8 AM-9 AM">8 AM-9 AM</option>
+            <option value="9 AM-10 AM">9 AM-10 AM</option>
+            <option value="10 AM-11 AM">10 AM-11 AM</option>
+            <option value="11 AM-12 PM">11 AM-12 PM</option>
+          </select>
+        </div>
+      </div>
+      <div class="lunch">
+        <p>LET'S HAVE SOME LUNCH !!</p>
+        <img src="/images/lunch.png" height="380px" width="400px" />
+      </div>
+      <div class="afternoon">GOOD AFTERNOON !!</div>
+      <div class="party">Party time!</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
