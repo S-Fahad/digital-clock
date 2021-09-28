@@ -74,6 +74,7 @@ picture();
 const wakeup = document.getElementById("wakeUp");
 wakeup.addEventListener("change", () => {
   imageChange.src = "./images/morning.png";
+  imageChange.style.height = "290px";
   textChange[1].innerHTML = "WAKE UP !!";
   partyTime.innerHTML = "Party time!";
   afternoon.innerHTML = "GOOD MORNING !!";
