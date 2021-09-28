@@ -181,6 +181,7 @@ select {
   }
   .subHeader1{
       margin: auto;
+      margin-top: 10px;
   }
   .timer{
       margin: auto;
@@ -196,7 +197,7 @@ select {
       width:305px;
   }
   .main {
-      margin-top: 20px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 3%;
@@ -206,33 +207,33 @@ select {
     margin: 2%;
   }
   .wakeup{
-      width: 360px;
-      margin: auto;
+    width: 360px;
+    margin: auto;
   }
   .afternoon{
-      width: 360px;
-      margin: auto;
+    width: 360px;
+    margin: auto;
   }
   .party{
-     margin: auto;
-     width: 240px;
+  margin: auto;
+   width: 240px;
   }
   .lunch {
-      grid-row-start: 4;
-      grid-row-end: 6;
-      height: 260px;
-     margin: auto;
-      width: 360px;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  height: 300px;
+  margin: auto;
+  width: 360px;
+  }
+  .lunch > p {
+    color: blueviolet;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 10px;
+    padding-left: 10px;
     }
-    .lunch > p {
-        color: blueviolet;
-        font-weight: bolder;
-        font-family: cursive;
-        font-size: 10px;
-        padding-left: 10px;
-      }
 .lunch > img {
-    height: 290px;
+  height: 290px;
     margin-left: 0px;
     padding-left: 0px;
     width: 280px;  

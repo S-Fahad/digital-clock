@@ -15,7 +15,7 @@
   <body>
     <div class="header">
       <div class="subHeader1">
-        <img class="clock" src="/images/clock.jpeg" />
+        <img class="clock" src="./images/clock.jpeg" />
         <div class="cText">CLOCK</div>
       </div>
       <div class="timer">
@@ -44,39 +44,48 @@
           <i class="fas fa-sun sun1" height="100px" width="100px"></i>set wake
           up time
 
-          <select name="" id="sOption">
-            <option value="8 AM-9 AM">8 AM-9 AM</option>
-            <option value="">
-              <a href="./index2.html">9 AM-10 AM</a>
-            </option>
-            <option value="10 AM-11 AM">10 AM-11 AM</option>
-            <option value="11 AM-12 PM">11 AM-12 PM</option>
+          <select id="wakeUp">
+            <option selected>select time</option>
+            <option value="5 AM- 6 AM">5 AM- 6 AM</option>
+            <option value="6 AM- 7 AM">6 AM-7 AM</option>
+            <option value="7 AM-8 AM">7 AM-8 AM</option>
+            <option value="8 AM- 9 AM">8 AM-9 AM</option>
+            <option value="9 AM- 10 AM">9 AM-10 AM</option>
           </select>
         </div>
         <div class="verLine"></div>
         <div class="setLTime">
           <i class="fas fa-utensils uten1"> </i>Set lunch time
-          <select name="" id="">
-            <option value="8 AM-9 AM">8 AM-9 AM</option>
-            <option value="9 AM-10 AM">9 AM-10 AM</option>
-            <option value="10 AM-11 AM">10 AM-11 AM</option>
-            <option value="11 AM-12 PM">11 AM-12 PM</option>
+          <select id="lunchTime">
+            <option selected>select time</option>
+            <option value="12 PM-1 PM">12 PM-1 PM</option>
+            <option value="1PM -2PM">1PM -2PM</option>
+            <option value="2 PM-3 PM">2 PM-3 PM</option>
+            <option value="3 PM-4 PM">3 PM-4 PM</option>
+            <option value="4 PM-5 PM">4 PM-5 PM</option>
           </select>
         </div>
         <div class="verLine"></div>
         <div class="setNTime">
           <i class="fas fa-bed bed1"></i>Set nap time
-          <select name="" id="">
-            <option value="8 AM-9 AM">8 AM-9 AM</option>
-            <option value="9 AM-10 AM">9 AM-10 AM</option>
-            <option value="10 AM-11 AM">10 AM-11 AM</option>
-            <option value="11 AM-12 PM">11 AM-12 PM</option>
+          <select name="" id="night">
+            <option selected>select time</option>
+            <option value="7 PM-8 PM">7 PM-8 PM</option>
+            <option value="8 PM-9 PM">8 PM-9 PM</option>
+            <option value="9 PM-10 PM">9 PM-10 PM</option>
+            <option value="10 PM-11 PM">10 PM-11 PM</option>
+            <option value="11 PM-12 AM">11 PM-12 AM</option>
           </select>
         </div>
       </div>
       <div class="lunch">
         <p>LET'S HAVE SOME LUNCH !!</p>
-        <img src="/images/lunch.png" height="380px" width="400px" />
+        <img
+          src="./images/lunch.png"
+          height="380px"
+          width="400px"
+          id="imageChange"
+        />
       </div>
       <div class="afternoon">GOOD AFTERNOON !!</div>
       <div class="party">Party time!</div>
