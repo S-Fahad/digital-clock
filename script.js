@@ -3,6 +3,7 @@ function clock() {
   var h = date.getHours();
   var m = date.getMinutes();
   var s = date.getSeconds();
+
   var ses = "AM";
 
   if (h >= 12) {
@@ -30,66 +31,68 @@ function clock() {
   setTimeout(clock, 1000);
 }
 clock();
-const afternoon = document.querySelector(".afternoon");
-const partyTime = document.querySelector(".party");
-let imageChange = document.getElementById("imageChange");
-let textChange = document.querySelector(".lunch").childNodes;
-partyTime.addEventListener("click", change);
-function change() {
-  let imageChange = document.getElementById("imageChange");
-  let textChange = document.querySelector(".lunch").childNodes;
-  imageChange.src = "./images/party2.svg";
-  imageChange.style.height = "340px";
-  textChange[1].innerHTML = "Party Time !!";
-  partyTime.innerHTML = "Double click to end party";
-  afternoon.innerHTML = "PARTY TIME !!";
-}
 
-partyTime.addEventListener("dblclick", picture);
-function picture() {
-  const date = new Date();
-  const h = date.getHours();
-  if (h >= 7 && h <= 10) {
-    imageChange.src = "./images/morning.png";
-    imageChange.style.height = "290px";
-    textChange[1].innerHTML = "WAKE UP !!";
-    partyTime.innerHTML = "Party time!";
-    afternoon.innerHTML = "GOOD MORNING !!";
-  }
-  if (h >= 10 && h <= 18) {
-    textChange[1].innerHTML = "LET'S HAVE SOME LUNCH !!";
-    imageChange.src = "./images/lunch.png";
-    partyTime.innerHTML = "Party time!";
-    afternoon.innerHTML = "GOOD AFTERNOON !!";
-  }
-  if (h >= 18 && h <= 24) {
-    textChange[1].innerHTML = "GOOD NIGHT !!";
-    imageChange.src = "./images/night.png";
-    partyTime.innerHTML = "Party time!";
-    afternoon.innerHTML = "GOOD NIGHT !!";
-  }
-}
-picture();
+const code = document.querySelector(".code");
+const partyTime = document.querySelector(".party");
+const imageChange = document.getElementById("imageChange");
+const textChange = document.querySelector(".lunch").childNodes;
 
 const wakeup = document.getElementById("wakeUp");
-wakeup.addEventListener("change", () => {
-  imageChange.src = "./images/morning.png";
-  imageChange.style.height = "290px";
-  textChange[1].innerHTML = "WAKE UP !!";
-  partyTime.innerHTML = "Party time!";
-  afternoon.innerHTML = "GOOD MORNING !!";
-});
 const afterNoon = document.getElementById("lunchTime");
-afterNoon.addEventListener("change", () => {
-  textChange[1].innerHTML = "LET'S HAVE SOME LUNCH !!";
-  imageChange.src = "./images/lunch.png";
-  partyTime.innerHTML = "Party time!";
-  afternoon.innerHTML = "GOOD AFTERNOON !!";
-});
 const night = document.getElementById("night");
-night.addEventListener("change", () => {
-  textChange[1].innerHTML = "GOOD NIGHT !!";
-  imageChange.src = "./images/night.png";
-  partyTime.innerHTML = "Party time!";
-  afternoon.innerHTML = "GOOD NIGHT !!";
-});
+const h = new Date().getHours();
+
+function prty() {
+  partyTime.innerHTML = " Party Time";
+  imageChange.src = "./images/default.jpg";
+  imageChange.style.height = "300px";
+  textChange[1].innerHTML = "Let's Code !!";
+  code.innerHTML = "Coding Time !!";
+}
+
+function wake() {
+  if (h == wakeup.value) {
+    imageChange.src = "./images/morning.png";
+    textChange[1].innerHTML = "Wake Up !!";
+    code.innerHTML = "GOOD MORNING !!";
+  } else {
+    prty();
+  }
+}
+function lunchBreak() {
+  if (h == afterNoon.value) {
+    imageChange.src = "/images/lunch.png";
+    textChange[1].innerHTML = "Let's have some lunch !!";
+    code.innerHTML = "GOOD AFTERNOON !!";
+  } else {
+    prty();
+  }
+}
+function evening() {
+  if (h == night.value) {
+    imageChange.src = "/images/night.png";
+    textChange[1].innerHTML = "Nap Time !!";
+    code.innerHTML = "GOOD EVENING !!";
+  } else {
+    prty();
+  }
+}
+wakeup.addEventListener("change", wake);
+afterNoon.addEventListener("change", lunchBreak);
+night.addEventListener("change", evening);
+
+//party
+let isParty = true;
+partyTime.addEventListener("click", change);
+function change() {
+  if (isParty) {
+    partyTime.innerHTML = "End Party !";
+    imageChange.src = "./images/party2.svg";
+    imageChange.style.height = "300px";
+    textChange[1].innerHTML = "Let's party all night !!";
+    code.innerHTML = "PARTY TIME !!";
+  } else {
+    prty();
+  }
+  isParty = !isParty;
+}
