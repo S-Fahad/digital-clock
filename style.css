@@ -179,22 +179,22 @@ select {
     display: grid;
     grid-template-columns: 1fr;
   }
-  .subHeader1{
-      margin: auto;
-      margin-top: 10px;
+  .subHeader1 {
+    margin: auto;
+    margin-top: 10px;
   }
-  .timer{
-      margin: auto;
-      width: 380px;
+  .timer {
+    margin: auto;
+    width: 380px;
   }
-  .tme{
-      padding-left: 0px;
+  .tme {
+    padding-left: 0px;
   }
-  .box1{
-      width: 280px;
+  .box1 {
+    width: 280px;
   }
-  .box2{
-      width:305px;
+  .box2 {
+    width: 305px;
   }
   .main {
     margin-top: 20px;
@@ -206,24 +206,24 @@ select {
     background-color: rgb(76, 25, 107);
     margin: 2%;
   }
-  .wakeup{
+  .wakeup {
     width: 360px;
     margin: auto;
   }
-  .code{
+  .code {
     width: 360px;
     margin: auto;
   }
-  .party{
-  margin: auto;
-   width: 240px;
+  .party {
+    margin: auto;
+    width: 240px;
   }
   .lunch {
-  grid-row-start: 4;
-  grid-row-end: 6;
-  height: 320px;
-  margin: auto;
-  width: 360px;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    height: 320px;
+    margin: auto;
+    width: 360px;
   }
   .lunch > p {
     color: blueviolet;
@@ -231,10 +231,11 @@ select {
     font-family: cursive;
     font-size: 10px;
     padding-left: 10px;
-    }
-.lunch > img {
-  height: 280px;
+  }
+  .lunch > img {
+    height: 280px;
     margin-left: 0px;
     padding-left: 0px;
-    width: 280px;  
+    width: 280px;
+  }
 }
