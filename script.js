@@ -61,7 +61,7 @@ function wake() {
 }
 function lunchBreak() {
   if (h == afterNoon.value) {
-    imageChange.src = "/images/lunch.png";
+    imageChange.src = "./images/lunch.png";
     textChange[1].innerHTML = "Let's have some lunch !!";
     code.innerHTML = "GOOD AFTERNOON !!";
   } else {
@@ -70,7 +70,7 @@ function lunchBreak() {
 }
 function evening() {
   if (h == night.value) {
-    imageChange.src = "/images/night.png";
+    imageChange.src = "./images/night.png";
     textChange[1].innerHTML = "Nap Time !!";
     code.innerHTML = "GOOD EVENING !!";
   } else {
